@@ -12,4 +12,6 @@ jobs:
         with:
           node-version: 18
       # - run: npm ci
+      - name: Definir una variable
+        run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
       - run: npm test
